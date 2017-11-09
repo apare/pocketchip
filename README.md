@@ -7,7 +7,7 @@
 ### Update packages:
 `sudo apt-get update`
 ### Install kbd zsh emacs git vim locales:
-`sudo apt-get install zsh emacs git vim locales`
+`sudo apt-get install zsh emacs git vim locales console-setup`
 ### Reduce font size:
 `sudo dpkg-reconfigure console-setup`
 ### get this repo:
