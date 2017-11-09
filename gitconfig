@@ -3,3 +3,5 @@
     email = alex.pare.inc@gmail.com
 [core]
     editor = emacs
+[push]
+    default = simple
