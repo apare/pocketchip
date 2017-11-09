@@ -9,7 +9,7 @@
 ### Install kbd zsh emacs git vim locales:
 `sudo apt-get install zsh emacs git vim locales`
 ### set zsh as default
-`chsh`
+`chsh` then type `/bin/zsh`
 ### Select utf8
 `sudo dpkg-reconfigure locales`
 select `en_US.UTF-8 UTF-8` then `en_US.UTF-8`
