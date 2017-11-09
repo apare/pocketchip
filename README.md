@@ -33,4 +33,6 @@ echo "source ~/pocketchip/keymap.sh" >> ~/.zshrc
 `ssh-keygen -t rsa -b 4096 -C "alex.pare.inc@gmail.com"`
 15. show the public ssh key (you need to add it to github)
 `cat .ssh/id_rsa.pub`
-16.  Add `/usr/bin/loadkeys /home/chip/pocketchip/keymap.kmap` /etc/rc.local
+16.  Add `/usr/bin/loadkeys /home/chip/pocketchip/keymap.kmap` in `/etc/rc.local`
+17. install nodejs
+`curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -` then `sudo apt-get install nodejs build-essential`
