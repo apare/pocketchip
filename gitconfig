@@ -2,6 +2,6 @@
     name = alexandre Paré
     email = alex.pare.inc@gmail.com
 [core]
-    editor = emacs
+    editor = vim
 [push]
     default = simple
