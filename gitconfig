@@ -3,5 +3,7 @@
     email = alex.pare.inc@gmail.com
 [core]
     editor = vim
+[diff]
+    tool = vimdiff
 [push]
     default = simple
