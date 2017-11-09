@@ -8,8 +8,12 @@
 `sudo apt-get update`
 ### Install kbd zsh emacs git vim locales:
 `sudo apt-get install zsh emacs git vim locales`
-### set zsh as default
-`chsh` then type `/bin/zsh`
+### Reduce font size:
+`sudo dpkg-reconfigure console-setup`
+### get this repo:
+`git clone https://github.com/apare/pocketchip.git`
+### install oh-my-zsh
+`sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
 ### Select utf8
 `sudo dpkg-reconfigure locales`
 select `en_US.UTF-8 UTF-8` then `en_US.UTF-8`
@@ -19,12 +23,6 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 ```
-### Reduce font size:
-`sudo dpkg-reconfigure console-setup`
-### get this repo:
-`git clone https://github.com/apare/pocketchip.git`
-### install oh-my-zsh
-`sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
 ### Install spacemacs
 `git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d`
 ### add keymap to zshrc
