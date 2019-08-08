@@ -8,6 +8,12 @@ https://flashingmachine.com/Flash
 `ssh chip@192.168.1.xxx`
 ### Update packages:
 `sudo apt-get update`
+
+if you have an `apt-transport-https` error
+```
+cd /usr/lib/apt/methods
+ln -s http https
+```
 ### Install kbd zsh emacs git vim locales:
 `sudo apt-get install zsh emacs git vim locales console-setup`
 ### Reduce font size:
