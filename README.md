@@ -1,3 +1,5 @@
+### Flash the chip
+https://flashingmachine.com/Flash
 ### Change password:
 `passwd`
 ### Connect to wifi:
