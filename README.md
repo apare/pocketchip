@@ -36,4 +36,4 @@ add `source ~/pocketchip/keymap.sh` to `~/.zshrc`
 ###  Setup keymap
 Add `/usr/bin/loadkeys /home/chip/pocketchip/keymap.kmap` in `/etc/rc.local`
 ### install nodejs
-`curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -` then `sudo apt-get install -y nodejs`
+`curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -` then `sudo apt-get install -y nodejs build-essential`
