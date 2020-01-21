@@ -19,25 +19,26 @@ http://chip.jfpossibilities.com/chip/debian/
 `sudo apt-get upgrade`
 ### Install kbd zsh emacs git vim locales:
 `sudo apt-get install zsh emacs git vim locales console-setup`
-### Reduce font size:
-`sudo dpkg-reconfigure console-setup`
-### get this repo:
-`git clone https://github.com/apare/pocketchip.git`
 ### install oh-my-zsh
 `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
+### Reduce font size:
+`sudo dpkg-reconfigure console-setup`
 ### Select utf8
 `sudo dpkg-reconfigure locales`
 select `en_US.UTF-8 UTF-8` then `en_US.UTF-8`
-### Add this to utf8 to zsh
+### get this repo:
+`git clone https://github.com/apare/pocketchip.git`
+### Allowed execute keymap:
+`chmod +x ~/pocketchip/keymap.sh`
+### Add to `~/.zshrc`
 ```
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
+
+source ~/pocketchip/keymap.sh
 ```
-### Install spacemacs
-`git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d`
-### add keymap to zshrc
-add `source ~/pocketchip/keymap.sh` to `~/.zshrc`
+
 ### generate a new ssh key
 `ssh-keygen -t rsa -b 4096 -C "alex.pare.inc@gmail.com"`
 ### show the public ssh key (you need to add it to github)
@@ -45,4 +46,4 @@ add `source ~/pocketchip/keymap.sh` to `~/.zshrc`
 ###  Setup keymap
 Add `/usr/bin/loadkeys /home/chip/pocketchip/keymap.kmap` in `/etc/rc.local`
 ### install nodejs
-`curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -` then `sudo apt-get install -y nodejs build-essential`
+https://github.com/nodesource/distributions/blob/master/README.md#deb
