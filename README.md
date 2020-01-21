@@ -40,6 +40,7 @@ export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 
 source ~/pocketchip/keymap.sh
+clear
 ```
 ## Adding a ssh key
 ### generate a new ssh key
@@ -49,3 +50,4 @@ source ~/pocketchip/keymap.sh
 
 ### install nodejs
 https://github.com/nodesource/distributions/blob/master/README.md#deb
+don't forget to run `apt-get install -y build-essential` to have access to npm
