@@ -1,19 +1,22 @@
 ### Flash the chip
-https://flashingmachine.com/Flash
+https://github.com/Thore-Krug/Flash-CHIP
 ### Change password:
 `passwd`
 ### Connect to wifi:
 `nmtui`
 ### SSH the pocketchip from an other pc (because the colon is not accessible)
 `ssh chip@192.168.1.xxx`
+### Update repo:
+in `/etc/apt/sources.list`
+```diff
+- deb http://opensource.nextthing.co/chip/debian/repo jessie main
++ deb http://chip.jfpossibilities.com/chip/debian/repo jessie main
+```
+http://chip.jfpossibilities.com/chip/debian/
 ### Update packages:
 `sudo apt-get update`
-
-if you have an `apt-transport-https` error
-```
-cd /usr/lib/apt/methods
-ln -s http https
-```
+### Upgrade packages:
+`sudo apt-get upgrade`
 ### Install kbd zsh emacs git vim locales:
 `sudo apt-get install zsh emacs git vim locales console-setup`
 ### Reduce font size:
