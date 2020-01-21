@@ -30,6 +30,9 @@ select `en_US.UTF-8 UTF-8` then `en_US.UTF-8`
 `git clone https://github.com/apare/pocketchip.git`
 ### Allowed execute keymap:
 `chmod +x ~/pocketchip/keymap.sh`
+###  Setup keymap
+Add `/usr/bin/loadkeys /home/chip/pocketchip/keymap.kmap` in `/etc/rc.local`
+
 ### Add to `~/.zshrc`
 ```
 export LC_ALL=en_US.UTF-8
@@ -38,12 +41,11 @@ export LANGUAGE=en_US.UTF-8
 
 source ~/pocketchip/keymap.sh
 ```
-
+## Adding a ssh key
 ### generate a new ssh key
 `ssh-keygen -t rsa -b 4096 -C "alex.pare.inc@gmail.com"`
 ### show the public ssh key (you need to add it to github)
 `cat ~/.ssh/id_rsa.pub`
-###  Setup keymap
-Add `/usr/bin/loadkeys /home/chip/pocketchip/keymap.kmap` in `/etc/rc.local`
+
 ### install nodejs
 https://github.com/nodesource/distributions/blob/master/README.md#deb
